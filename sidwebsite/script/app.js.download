@@ -1,0 +1,197 @@
+
+
+
+
+
+$(document).ready(function(){
+
+  $("#home").on('click',function(event){
+   window.location.replace("home.html");
+  });
+
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+
+
+ $(".navbar a, footer a[href='#blogPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+
+$(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+
+
+$(".margin p").click(function() {
+    window.location.replace("blog.html");
+    });
+
+$(".margin p").hover(function()
+        {
+            $(this).css("color", " #1abc9c "); 
+        },
+        function()
+        {
+            $(this).css("color", "#555555")
+        });
+
+$(".blockquote-reverse").hover(function()
+        {
+            $(this).css("color", " #1abc9c "); 
+        },
+        function()
+        {
+            $(this).css("color", "#555555")
+        });
+
+
+$(".blockquote-reverse").click(function() {
+  if(this.id=="character")
+    window.open("http://github.com/ayir");
+  else if(this.id=="twitter")
+    window.open("http://github.com/ayir/twitter_sentiment_analyzer");
+  else if(this.id=="chrome")
+    window.open("http://github.com/ayir/NewsPlus");
+  else if(this.id=="chat")
+     window.open("http://github.com/ayir/Lets_chat");
+   else if(this.id=="opencv")
+     window.open("http://github.com/ayir/DIRECT_the_snake");
+   else if(this.id=="magic")
+        window.open("http://github.com/ayir/MagicalHangout");
+  else if(this.id=="movie")
+  window.open("http://github.com/ayir/MovieFinder");
+   else{ }
+
+    });
+$(".main").click(function(){
+  window.location.replace("blog.html");
+});
+
+  $('[data-toggle="tooltip"]').tooltip(); 
+    $('[data-toggle="tooltip1"]').tooltip(); 
+$(".glyphicon-file").click(function(){
+  var win = window.open("lokendrajain_resume.pdf");
+if (win) {
+    win.focus();
+} else {
+    alert('Please allow popups for this website');
+}
+
+});
+
+
+
+$(".glyphicon-file").click(function(){
+  var win = window.open("lokendrajain_resume.pdf");
+if (win) {
+    win.focus();
+} else {
+    alert('Please allow popups for this website');
+}
+
+});
+
+
+$(".glyphicon-link").click(function(){
+  var win = window.open("https://github.com/lokendra1994");
+if (win) {
+    win.focus();
+} else {
+    alert('Please allow popups for this website');
+}
+
+});
+
+$(".fa-linkedin").click(function(){
+  var win = window.open("https://www.linkedin.com/in/lokendra-jain-16008271/");
+if (win) {
+    win.focus();
+} else {
+    alert('Please allow popups for this website');
+}
+
+});
+
+
+$(".fa-facebook").click(function(){
+  var win = window.open("https://www.facebook.com/lokendra.jain.5");
+if (win) {
+    win.focus();
+} else {
+    alert('Please allow popups for this website');
+}
+
+});
+
+
+$('#search').keyup(function() {
+ var searchTerm = $(this).val(); 
+ var myExp = new RegExp(searchTerm, "i"); 
+ var dataList = document.getElementById('projects');
+ var input = document.getElementById('search');
+ $.getJSON("http://localhost/my.json", function(data){
+
+ 
+  $.each(data, function(key, val){
+   if(val.name.search(myExp) != -1){
+    var option = document.createElement('option');
+        option.value = val.name;
+        dataList.appendChild(option);
+  }
+   input.placeholder = "Search";
+
+ });
+});
+});
+ 
+
+ 
+
+})
