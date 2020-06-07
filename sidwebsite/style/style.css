@@ -1,0 +1,270 @@
+/* Initial body */
+#myPage {
+    font: 20px "Montserrat", sans-serif;
+    line-height: 1.8;
+    color: #000;
+    background: #000;
+
+}
+
+#blogPage{
+   font: 20px "Montserrat", sans-serif;
+    line-height: 1.8;
+    color: #fff;
+    background: #fff;
+  
+}
+
+
+
+p {font-size: 16px;}
+
+
+
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.container-fluid2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.blog-1{
+  margin-top: 0;
+  background:#000;
+  min-height: 350px;
+  background-size: cover;
+  color: #fff;
+  height:auto;
+position: relative;
+     
+}
+
+.blog-2{
+  margin-top: 0;
+  
+  min-height: 350px;
+  background-color: #fff;
+  background-size: cover;
+  color: #000;
+  height:auto; 
+  position:relative;   
+}
+
+
+.intro{ 
+  margin-top: 50px;
+  line-height: 30px;
+
+}
+.bg-1{
+  /*background-color: #FFEFD5  ; */
+  margin-top: 0;
+  background:#000;
+  min-height: 350px;
+  background-size: cover;
+  color: #fff;
+  height:auto;
+  
+  position:relative;        
+}
+
+.bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+   padding: 60px 50px;
+  min-height: 350px;
+  color: #ffffff;
+  height:auto;
+  position:relative;   
+}
+.bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+    min-height: 350px;
+  background-size: cover;
+  height: auto;
+  position:relative;   
+}
+.navbar {
+  /*padding-top: 15px;
+  padding-bottom: 15px;*/
+    margin-bottom: 0;
+    background-color: #000;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    opacity: 0.9;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #1abc9c !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+
+.bg-4 { 
+    background-color: #2f2f2f;
+    color: #ffffff;
+ 
+  height:auto;
+     
+}
+
+.blog-3{
+   background-color: #2f2f2f;
+    color: #ffffff;
+ 
+  height:auto;
+    
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 80%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+
+
+
+.col-sm-4{
+  cursor: pointer;
+}
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+.glyphicon:hover{
+ color: #1abc9c !important;
+}
+.fa:hover{
+  color: #1abc9c !important;
+}
+
+
+.margin{
+   letter-spacing: 5px;
+  font-size:30px;
+}
+
+.margin-1{
+  position: relative;
+  top:50px;
+  letter-spacing: 10px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.intro{
+   letter-spacing: 5px;
+  font-size:12px;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+.margin p{
+   cursor: pointer;
+  display: inline-block;
+  font-size: 30px;
+} 
+
+.col-sm-3half, .col-sm-8half {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+    .col-sm-3half, .col-sm-8half {
+        float: left;
+    }
+    .col-sm-3half {
+        width: 29.16666667%;
+    }
+    .col-sm-8half {
+        width: 50.83333333%;
+    }
+}
+
+.thumbnail p{
+  margin-top: 10px;
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#search {
+  border-right: transparent;
+  border-left: transparent;
+  border-top:transparent; 
+  border-bottom: 2px solid black;
+  background: transparent;
+}
+
+
+
+
+/* CSS3 */
+
+
+
+
+
+
